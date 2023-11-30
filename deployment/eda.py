@@ -19,38 +19,7 @@ def run():
     st.header("The First 10 Entry Data")
     st.table(df.head(10))
 
-    # The last 10 data
-    st.header("Data Description")
-    st.table(df.describe())
-
-    # Wine Types
-    st.header("Wine Types")
-    st.image("winetype.png", caption="Figure 1")
-    st.caption(""" This is a visualisation of the ratio of the two types of wine (white and red).
-
-    1. White wine: 74.5%
-    2. Red wine: 25.5% """)
-
-    # Wine pH by Type
-    st.header("Wine pH by Type")
-    st.image("winepH.png", caption="Figure 2")
-    st.caption(""" This is a visualisation of a boxplot comparing the pH levels of two types of wine (white and red).
-
-    1. White wine: 
-
-    - Wider range of pH values than red wine
-    - The distribution is more spread out (the lower and higher ends have several outliers)
-
-    - The median pH values is around the center of the box
-
-    2. Red wine:
-
-    - Have more concentrated range of pH values
-
-    - Only have few outliers
-
-    - The median pH appears to be slightly lower than white wine.""")
-
+   
     # Fixed Acidity
     st.header("Fixed Acidity")
     st.image("FixedAcidity.png", caption="Figure 3")
